@@ -2,7 +2,7 @@
 
 Expand your Minecraft arsenal with a complete amethyst equipment tier! This datapack and resource pack combo adds craftable amethyst tools, weapons, and armor that fill the gap between iron and diamond gear.
 
-![Fantaz and his horse wearing amethyst gear](YOUR_SCREENSHOT_URL_HERE)
+![Fantaz and his horse wearing amethyst gear](https://cdn.modrinth.com/data/cached_images/b32c206567595b1315fd5b330b61ac58a4d48e1e.png)
 
 ---
 
