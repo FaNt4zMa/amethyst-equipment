@@ -72,6 +72,13 @@ All armor pieces support vanilla armor trims!
 
 ---
 
+## 💚 More Equipment Tiers
+
+**Also check out:** 
+- [Emerald Equipment](https://modrinth.com/datapack/fantazs-emerald-equipment) - A companion pack adding emerald gear to complete your mid-tier options!
+
+---
+
 ## 🙏 Credits & Inspiration
 
 This datapack was inspired by and builds upon:
