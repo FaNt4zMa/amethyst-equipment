@@ -31,6 +31,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Get version without v prefix
+        id: version
+        run: |
+          VERSION="${{ github.event.release.tag_name }}"
+          echo "number=${VERSION#v}" >> $GITHUB_OUTPUT
+
       - name: Publish datapack to Modrinth
         uses: cloudnode-pro/modrinth-publish@v2
         with:
@@ -39,7 +45,7 @@ jobs:
           name: ${{ github.event.release.name }}
           files: '["Amethyst-Equipment-DP-${{ github.event.release.tag_name }}.zip", "Amethyst-Equipment-RP-${{ github.event.release.tag_name }}.zip"]'
           primary-file: "Amethyst-Equipment-DP-${{ github.event.release.tag_name }}.zip"
-          version: ${{ github.event.release.tag_name }}
+          version: ${{ steps.version.outputs.number }}
           changelog: |
             ${{ github.event.release.body }}
             
@@ -57,7 +63,7 @@ jobs:
 
       - name: Bundle datapack as mod
         run: |
-          VERSION="${{ github.event.release.tag_name }}"
+          VERSION="${{ steps.version.outputs.number }}"
           MOD_ID="${{ env.MOD_ID }}"
           ID="${{ env.MODRINTH_ID }}"
           ICON_NAME="${{ env.MODRINTH_SLUG }}_pack.png"
@@ -173,7 +179,7 @@ jobs:
           project: ${{ env.MODRINTH_ID }}
           name: ${{ github.event.release.name }}
           files: '["${{ env.MODRINTH_SLUG }}-${{ github.event.release.tag_name }}.jar"]'
-          version: ${{ github.event.release.tag_name }}+mod
+          version: ${{ steps.version.outputs.number }}+mod
           changelog: |
             ${{ github.event.release.body }}
             
