@@ -1,0 +1,64 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "A",
+    "A",
+    "S"
+  ],
+  "key": {
+    "A": [
+      "minecraft:amethyst_shard"
+    ],
+    "S": [
+      "minecraft:stick"
+    ]
+  },
+  "result": {
+    "id": "minecraft:diamond_sword",
+    "components": {
+      "minecraft:max_damage": 820,
+      "minecraft:item_model": "amethyst-equipment:amethyst_sword",
+      "minecraft:item_name": {
+        "translate": "item.amethyst-equipment.amethyst_sword"
+      },
+      "minecraft:repairable": {
+        "items": "minecraft:amethyst_shard"
+      },
+      "minecraft:enchantable": {
+        "value": 14
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_damage",
+          "id": "minecraft:attack_damage",
+          "amount": 6.5,
+          "operation": "add_value",
+          "slot": "mainhand",
+          "display": {
+            "type": "override",
+            "value": {
+              "text": " 6.5 Attack Damage",
+              "color": "dark_green"
+            }
+          }
+        },
+        {
+          "type": "minecraft:attack_speed",
+          "id": "minecraft:attack_speed",
+          "amount": 1.6,
+          "operation": "add_value",
+          "slot": "mainhand",
+          "display": {
+            "type": "override",
+            "value": {
+              "text": " 1.6 Attack Speed",
+              "color": "dark_green"
+            }
+          }
+        }
+      ]
+    },
+    "count": 1
+  }
+}

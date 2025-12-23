@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "AA",
+    "AS",
+    " S"
+  ],
+  "key": {
+    "A": [
+      "minecraft:amethyst_shard"
+    ],
+    "S": [
+      "minecraft:stick"
+    ]
+  },
+  "result": {
+    "id": "minecraft:diamond_axe",
+    "components": {
+      "minecraft:max_damage": 820,
+      "minecraft:item_model": "amethyst-equipment:amethyst_axe",
+      "minecraft:item_name": {
+        "translate": "item.amethyst-equipment.amethyst_axe"
+      },
+      "minecraft:repairable": {
+        "items": "minecraft:amethyst_shard"
+      },
+      "minecraft:enchantable": {
+        "value": 14
+      }
+    },
+    "count": 1
+  }
+}

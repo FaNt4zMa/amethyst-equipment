@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "A A",
+    "AAA",
+    "AAA"
+  ],
+  "key": {
+    "A": [
+      "minecraft:amethyst_shard"
+    ]
+  },
+  "result": {
+    "id": "minecraft:diamond_chestplate",
+    "components": {
+      "minecraft:max_damage": 432,
+      "minecraft:item_model": "amethyst-equipment:amethyst_chestplate",
+      "minecraft:item_name": {
+        "translate": "item.amethyst-equipment.amethyst_chestplate"
+      },
+      "minecraft:repairable": {
+        "items": "minecraft:amethyst_shard"
+      },
+      "minecraft:enchantable": {
+        "value": 14
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "minecraft:armor",
+          "amount": 6,
+          "operation": "add_value",
+          "slot": "chest"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "minecraft:armor_toughness",
+          "amount": 1,
+          "operation": "add_value",
+          "slot": "chest"
+        }
+      ],
+      "minecraft:equippable": {
+        "slot": "chest",
+        "equip_sound": "minecraft:item.armor.equip_diamond",
+        "asset_id": "amethyst-equipment:amethyst"
+      }
+    },
+    "count": 1
+  }
+}

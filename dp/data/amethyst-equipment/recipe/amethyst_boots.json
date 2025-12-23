@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "A A",
+    "A A"
+  ],
+  "key": {
+    "A": [
+      "minecraft:amethyst_shard"
+    ]
+  },
+  "result": {
+    "id": "minecraft:diamond_boots",
+    "components": {
+      "minecraft:max_damage": 351,
+      "minecraft:item_model": "amethyst-equipment:amethyst_boots",
+      "minecraft:item_name": {
+        "translate": "item.amethyst-equipment.amethyst_boots"
+      },
+      "minecraft:repairable": {
+        "items": "minecraft:amethyst_shard"
+      },
+      "minecraft:enchantable": {
+        "value": 14
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "minecraft:armor",
+          "amount": 3,
+          "operation": "add_value",
+          "slot": "feet"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "minecraft:armor_toughness",
+          "amount": 1,
+          "operation": "add_value",
+          "slot": "feet"
+        }
+      ],
+      "minecraft:equippable": {
+        "slot": "feet",
+        "equip_sound": "minecraft:item.armor.equip_diamond",
+        "asset_id": "amethyst-equipment:amethyst"
+      }
+    },
+    "count": 1
+  }
+}

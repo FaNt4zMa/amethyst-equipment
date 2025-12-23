@@ -1,0 +1,48 @@
+name: Github Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create resourcepack zip from rp folder
+        run: |
+          cd rp
+          zip -r "../Amethyst-Equipment-RP-${{ github.ref_name }}.zip" .
+
+      - name: Create datapack zip from dp folder
+        run: |
+          cd dp
+          zip -r "../Amethyst-Equipment-DP-${{ github.ref_name }}.zip" .
+
+      - name: Extract latest changelog entry
+        id: changelog
+        run: |
+          awk '/^## /{if (NR>1) exit} {print}' changelog.md > latest_changelog.txt
+          {
+            echo "body<<EOF"
+            cat latest_changelog.txt
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Create GitHub Release & attach zips
+        uses: softprops/action-gh-release@v2
+        with:
+          body: ${{ steps.changelog.outputs.body }}
+          files: |
+            Amethyst-Equipment-RP-${{ github.ref_name }}.zip
+            Amethyst-Equipment-DP-${{ github.ref_name }}.zip
+          name: "Amethyst Equipment ${{ github.ref_name }}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT }}

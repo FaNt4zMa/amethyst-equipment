@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "A A",
+    "AAA",
+    "A A"
+  ],
+  "key": {
+    "A": [
+      "minecraft:amethyst_shard"
+    ]
+  },
+  "result": {
+    "id": "minecraft:diamond_horse_armor",
+    "components": {
+      "minecraft:item_model": "amethyst-equipment:amethyst_horse_armor",
+      "minecraft:item_name": {
+        "translate": "item.amethyst-equipment.amethyst_horse_armor"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "minecraft:armor",
+          "amount": 7,
+          "operation": "add_value",
+          "slot": "body"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "minecraft:armor_toughness",
+          "amount": 1,
+          "operation": "add_value",
+          "slot": "body"
+        }
+      ],
+      "minecraft:equippable": {
+        "slot": "body",
+        "asset_id": "amethyst-equipment:amethyst",
+        "allowed_entities": "#minecraft:can_wear_horse_armor",
+        "equip_on_interact": true
+      }
+    },
+    "count": 1
+  }
+}
