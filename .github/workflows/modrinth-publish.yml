@@ -76,7 +76,7 @@ jobs:
           unzip "Amethyst-Equipment-RP-${VERSION}.zip" -d mod-temp
 
           # Extract datapack (goes into data/)
-          unzip -o "Amethyst-Equipment-DP-${VERSION}.zip" -d mod-temp
+          unzip -o "Amethyst-Equipment-DP-${{ github.event.release.tag_name }}.zip" -d mod-temp
           
           # Copy and rename pack icon for mod loaders
           if [ -f "mod-temp/pack.png" ]; then
