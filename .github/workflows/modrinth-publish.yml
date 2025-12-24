@@ -73,7 +73,7 @@ jobs:
           mkdir mod-temp
           
           # Extract resourcepack (goes into assets/)
-          unzip "Amethyst-Equipment-RP-${VERSION}.zip" -d mod-temp
+          unzip "Amethyst-Equipment-RP-${{ github.event.release.tag_name }}.zip" -d mod-temp
 
           # Extract datapack (goes into data/)
           unzip -o "Amethyst-Equipment-DP-${{ github.event.release.tag_name }}.zip" -d mod-temp
