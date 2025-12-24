@@ -31,31 +31,17 @@
       "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:attack_damage",
-          "id": "minecraft:attack_damage",
-          "amount": 4.5,
+          "id": "minecraft:base_attack_damage",
+          "amount": 3.5,
           "operation": "add_value",
-          "slot": "mainhand",
-          "display": {
-            "type": "override",
-            "value": {
-              "text": " 4.5 Attack Damage",
-              "color": "dark_green"
-            }
-          }
+          "slot": "mainhand"
         },
         {
           "type": "minecraft:attack_speed",
-          "id": "minecraft:attack_speed",
-          "amount": 1.2,
+          "id": "minecraft:base_attack_speed",
+          "amount": -2.8,
           "operation": "add_value",
-          "slot": "mainhand",
-          "display": {
-            "type": "override",
-            "value": {
-              "text": " 1.2 Attack Speed",
-              "color": "dark_green"
-            }
-          }
+          "slot": "mainhand"
         }
       ]
     },

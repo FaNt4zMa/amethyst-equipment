@@ -28,14 +28,14 @@
       "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:armor",
-          "id": "minecraft:armor",
-          "amount": 6,
+          "id": "minecraft:armor.leggings",
+          "amount": 5,
           "operation": "add_value",
           "slot": "legs"
         },
         {
           "type": "minecraft:armor_toughness",
-          "id": "minecraft:armor_toughness",
+          "id": "minecraft:armor.leggings",
           "amount": 1,
           "operation": "add_value",
           "slot": "legs"

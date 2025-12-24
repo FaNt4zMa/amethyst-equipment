@@ -27,14 +27,14 @@
       "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:armor",
-          "id": "minecraft:armor",
-          "amount": 3,
+          "id": "minecraft:armor.boots",
+          "amount": 2,
           "operation": "add_value",
           "slot": "feet"
         },
         {
           "type": "minecraft:armor_toughness",
-          "id": "minecraft:armor_toughness",
+          "id": "minecraft:armor.boots",
           "amount": 1,
           "operation": "add_value",
           "slot": "feet"

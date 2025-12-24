@@ -21,14 +21,14 @@
       "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:armor",
-          "id": "minecraft:armor",
+          "id": "minecraft:armor.body",
           "amount": 7,
           "operation": "add_value",
           "slot": "body"
         },
         {
           "type": "minecraft:armor_toughness",
-          "id": "minecraft:armor_toughness",
+          "id": "minecraft:armor.body",
           "amount": 1,
           "operation": "add_value",
           "slot": "body"
