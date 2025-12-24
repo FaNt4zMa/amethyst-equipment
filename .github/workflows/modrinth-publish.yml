@@ -166,7 +166,7 @@ jobs:
           
           # Package as JAR
           cd mod-temp
-          jar cf "../${{ env.MODRINTH_SLUG }}-${VERSION}.jar" .
+          jar cf "../${{ env.MODRINTH_SLUG }}-${{ github.event.release.tag_name }}.jar" .
           cd ..
           
           # Cleanup
