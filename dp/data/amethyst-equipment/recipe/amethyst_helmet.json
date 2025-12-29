@@ -11,7 +11,7 @@
     ]
   },
   "result": {
-    "id": "minecraft:diamond_helmet",
+    "id": "minecraft:iron_helmet",
     "components": {
       "minecraft:max_damage": 297,
       "minecraft:item_model": "amethyst-equipment:amethyst_helmet",

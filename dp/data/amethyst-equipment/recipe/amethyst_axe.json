@@ -15,7 +15,7 @@
     ]
   },
   "result": {
-    "id": "minecraft:diamond_axe",
+    "id": "minecraft:iron_axe",
     "components": {
       "minecraft:max_damage": 820,
       "minecraft:item_model": "amethyst-equipment:amethyst_axe",

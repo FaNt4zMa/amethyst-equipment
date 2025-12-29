@@ -1,10 +1,10 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "equipment",
   "pattern": [
-    "A A",
     "AAA",
-    "A A"
+    "A A",
+    "AAA"
   ],
   "key": {
     "A": [
@@ -12,17 +12,17 @@
     ]
   },
   "result": {
-    "id": "minecraft:iron_horse_armor",
+    "id": "minecraft:iron_nautilus_armor",
     "components": {
-      "minecraft:item_model": "amethyst-equipment:amethyst_horse_armor",
+      "minecraft:item_model": "amethyst-equipment:amethyst_nautilus_armor",
       "minecraft:item_name": {
-        "translate": "item.amethyst-equipment.amethyst_horse_armor"
+        "translate": "item.amethyst-equipment.amethyst_nautilus_armor"
       },
       "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:armor",
           "id": "minecraft:armor.body",
-          "amount": 7,
+          "amount": 6,
           "operation": "add_value",
           "slot": "body"
         },
@@ -37,8 +37,8 @@
       "minecraft:equippable": {
         "slot": "body",
         "asset_id": "amethyst-equipment:amethyst",
-        "allowed_entities": "#minecraft:can_wear_horse_armor",
-        "shearing_sound": "minecraft:item.horse_armor.unequip",
+        "allowed_entities": "#minecraft:can_wear_nautilus_armor",
+        "shearing_sound": "minecraft:item.armor.unequip_nautilus",
         "equip_on_interact": true,
         "can_be_sheared": true,
         "damage_on_hurt": false

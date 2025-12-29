@@ -12,7 +12,7 @@
     ]
   },
   "result": {
-    "id": "minecraft:diamond_chestplate",
+    "id": "minecraft:iron_chestplate",
     "components": {
       "minecraft:max_damage": 432,
       "minecraft:item_model": "amethyst-equipment:amethyst_chestplate",

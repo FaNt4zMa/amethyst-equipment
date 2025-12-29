@@ -1,6 +1,24 @@
 {
   "pack": {
-    "description": "Amethyst Equipment",
+    "description": {
+      "text": "Adds pretty purple armor",
+      "color": "light_purple",
+      "hover_event": {
+        "action": "show_text",
+        "value": [
+          {
+            "text": "Because Diamonds are overrated anyway...\n",
+            "color": "dark_aqua",
+            "italic": true
+          },
+          "",
+          {
+            "text": "by Fantaz",
+            "color": "gray"
+          }
+        ]
+      }
+    },
     "pack_format": 88,
     "supported_formats": [
       71,
@@ -8,5 +26,14 @@
     ],
     "min_format": 71,
     "max_format": 94
+  },
+  "overlays": {
+    "entries": [
+      {
+        "directory": "1.21.11",
+        "min_format": 94,
+        "max_format": 94
+      }
+    ]
   }
 }

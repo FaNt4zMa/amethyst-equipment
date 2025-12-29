@@ -11,7 +11,7 @@
     ]
   },
   "result": {
-    "id": "minecraft:diamond_boots",
+    "id": "minecraft:iron_boots",
     "components": {
       "minecraft:max_damage": 351,
       "minecraft:item_model": "amethyst-equipment:amethyst_boots",

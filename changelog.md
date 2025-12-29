@@ -1,3 +1,25 @@
+## [1.1.0] - 2025-12-29
+
+### Added
+
+- Nautilus Armor
+- Spear
+- General progression advancements
+- Automatically unlock recipes
+
+### Changed
+
+- Crafting an item longer gives the diamond tier as the base, preventing smithing table upgrade
+- Prettier `pack.mcmeta`
+- Horse Armor now has all its required fields for the `equippable` component
+
+### Fixed
+
+- No longer gives the "Cover Me with Diamonds" achievement when crafting a piece of armor
+- Prevent smithing table upgrade for custom armor
+
+
+
 ## [1.0.1] - 2025-12-23
 
 ### Fixed

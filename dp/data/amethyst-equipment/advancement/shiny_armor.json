@@ -1,0 +1,80 @@
+{
+  "display": {
+    "description": "Purple armor saves lives",
+    "icon": {
+      "components": {
+        "minecraft:item_model": "amethyst-equipment:amethyst_chestplate",
+        "minecraft:item_name": "item.amethyst-equipment.amethyst_chestplate"
+      },
+      "id": "minecraft:iron_chestplate"
+    },
+    "title": "Cover Me with... Amethyst?",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "amethyst-equipment:acquire_amethyst",
+  "criteria": {
+    "amethyst_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:iron_boots",
+            "components": {
+              "minecraft:item_model": "amethyst-equipment:amethyst_boots"
+            }
+          }
+        ]
+      }
+    },
+    "amethyst_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:iron_chestplate",
+            "components": {
+              "minecraft:item_model": "amethyst-equipment:amethyst_chestplate"
+            }
+          }
+        ]
+      }
+    },
+    "amethyst_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:iron_helmet",
+            "components": {
+              "minecraft:item_model": "amethyst-equipment:amethyst_helmet"
+            }
+          }
+        ]
+      }
+    },
+    "amethyst_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:iron_leggings",
+            "components": {
+              "minecraft:item_model": "amethyst-equipment:amethyst_leggings"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "amethyst_helmet",
+      "amethyst_chestplate",
+      "amethyst_leggings",
+      "amethyst_boots"
+    ]
+  ]
+}

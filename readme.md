@@ -2,7 +2,7 @@
 
 Expand your Minecraft arsenal with a complete amethyst equipment tier! This datapack and resource pack combo adds craftable amethyst tools, weapons, and armor that fill the gap between iron and diamond gear.
 
-![Fantaz and his horse wearing amethyst gear](https://cdn.modrinth.com/data/cached_images/b32c206567595b1315fd5b330b61ac58a4d48e1e.png)
+![Fantaz and his nautilus wearing amethyst gear](https://cdn.modrinth.com/data/qFTZtnLc/images/3c5dfdc33d4efbb88551405f2ef7cd9759b21e3e.png)
 
 ---
 
@@ -15,9 +15,9 @@ Craft a full set of amethyst equipment using amethyst shards you've gathered fro
 <summary><b>Available Items</b></summary>
 
 - **Tools**: Pickaxe, Axe, Shovel, Hoe
-- **Weapons**: Sword
+- **Weapons**: Spear, Sword
 - **Armor**: Helmet, Chestplate, Leggings, Boots
-- **Horse Armor**: Amethyst Horse Armor
+- **Mounts Armor**: Nautilus Armor, Horse Armor
 
 *All items feature custom textures and full armor trim support!*
 
@@ -31,10 +31,11 @@ Amethyst equipment sits comfortably between iron and diamond, offering a meaning
 
 | Stat | Value |
 |------|-------|
-| **Tools/Weapon Durability** | 820 *(~3.3x iron, ~48% less than diamond)* |
+| **Tools/Weapon Durability** | 820 |
 | **Armor Protection** | 18 Armor, 1 Armor Toughness |
-| **Horse Armor** | 7 Armor *(between iron's 5 and diamond's 11)* |
-| **Enchantability** | 14 *(better than diamond's 10!)* |
+| **Horse Armor** | 7 Armor, 1 Armor Toughness |
+| **Nautilus Armor** | 7 Armor, 1 Armor Toughness |
+| **Enchantability** | 14 |
 
 ---
 
@@ -75,7 +76,7 @@ All armor pieces support vanilla armor trims!
 ## 💚 More Equipment Tiers
 
 **Also check out:** 
-- [Emerald Equipment](https://modrinth.com/datapack/fantazs-emerald-equipment) - A companion pack adding emerald gear to complete your mid-tier options!
+- **[Emerald Equipment](https://modrinth.com/datapack/fantazs-emerald-equipment)** - A companion pack adding emerald gear to complete your mid-tier options!
 
 ---
 

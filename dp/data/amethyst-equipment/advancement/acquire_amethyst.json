@@ -1,0 +1,47 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:amethyst_shard"
+    },
+    "title": "Amethyst!",
+    "description": "Acquire amethyst shards",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:story/iron_tools",
+  "criteria": {
+    "amethyst_shards": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:amethyst_shard"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "amethyst_shards"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "amethyst-equipment:amethyst_axe",
+      "amethyst-equipment:amethyst_boots",
+      "amethyst-equipment:amethyst_chestplate",
+      "amethyst-equipment:amethyst_helmet",
+      "amethyst-equipment:amethyst_hoe",
+      "amethyst-equipment:amethyst_horse_armor",
+      "amethyst-equipment:amethyst_leggings",
+      "amethyst-equipment:amethyst_nautilus_armor",
+      "amethyst-equipment:amethyst_pickaxe",
+      "amethyst-equipment:amethyst_shovel",
+      "amethyst-equipment:amethyst_spear",
+      "amethyst-equipment:amethyst_sword"
+    ]
+  }
+}
