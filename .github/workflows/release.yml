@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Create resourcepack zip from rp folder
         run: |
@@ -44,5 +44,4 @@ jobs:
             Amethyst-Equipment-RP-${{ github.ref_name }}.zip
             Amethyst-Equipment-DP-${{ github.ref_name }}.zip
           name: "Amethyst Equipment ${{ github.ref_name }}"
-        env:
-          GITHUB_TOKEN: ${{ secrets.PAT }}
+          token: ${{ secrets.PAT }}

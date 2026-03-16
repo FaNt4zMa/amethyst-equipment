@@ -10,7 +10,7 @@ permissions:
 env:
   MODRINTH_SLUG: fantazs-amethyst-equipment
   MODRINTH_ID: qFTZtnLc
-  MOD_ID: amethyst-equipment
+  MOD_ID: amethyst_equipment
   PACK_NAME: Amethyst Equipment
   PACK_DESCRIPTION: Adds amethyst tools, weapons, and armor to Minecraft
   LICENSE: MIT
@@ -21,7 +21,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       
       - name: Download release assets
         run: |
@@ -73,10 +73,14 @@ jobs:
           mkdir mod-temp
           
           # Extract resourcepack (goes into assets/)
-          unzip "Amethyst-Equipment-RP-${{ github.event.release.tag_name }}.zip" -d mod-temp
+          unzip "Amethyst-Equipment-DP-${{ github.event.release.tag_name }}.zip" -d mod-temp
 
           # Extract datapack (goes into data/)
-          unzip -o "Amethyst-Equipment-DP-${{ github.event.release.tag_name }}.zip" -d mod-temp
+          unzip -o "Amethyst-Equipment-RP-${{ github.event.release.tag_name }}.zip" -d mod-temp
+          
+          # Move overlay directory into main
+          cp -rf mod-temp/1.21.11/* mod-temp/
+          rm -rf mod-temp/1.21.11
           
           # Copy and rename pack icon for mod loaders
           if [ -f "mod-temp/pack.png" ]; then
@@ -179,7 +183,7 @@ jobs:
           project: ${{ env.MODRINTH_ID }}
           name: ${{ github.event.release.name }}
           files: '["${{ env.MODRINTH_SLUG }}-${{ github.event.release.tag_name }}.jar"]'
-          version: ${{ steps.version.outputs.number }}+mod
+          version: ${{ steps.version.outputs.number }}
           changelog: |
             ${{ github.event.release.body }}
             
