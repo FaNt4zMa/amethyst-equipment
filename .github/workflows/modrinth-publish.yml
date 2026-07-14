@@ -60,6 +60,8 @@ jobs:
             1.21.9
             1.21.10
             1.21.11
+            26.1.x
+            26.2
 
       - name: Bundle datapack as mod
         run: |
@@ -198,6 +200,8 @@ jobs:
             1.21.9
             1.21.10
             1.21.11
+            26.1.x
+            26.2
           dependencies: |-
             [{
                 "project_id": "P7dR8mSH",

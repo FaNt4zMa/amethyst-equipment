@@ -22,17 +22,17 @@
     "pack_format": 69,
     "supported_formats": [
       55,
-      75
+      88
     ],
     "min_format": 55,
-    "max_format": 75
+    "max_format": 88
   },
   "overlays": {
     "entries": [
       {
         "directory": "1.21.11",
         "min_format": 75,
-        "max_format": 75
+        "max_format": 88
       }
     ]
   }

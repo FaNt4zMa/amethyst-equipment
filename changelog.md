@@ -1,10 +1,14 @@
+## [1.1.2] - 2026-07-14
+
+### Added
+
+- 26.1 and 26.2 support
+
 ## [1.1.1] - 2026-03-16
 
 ### Fixed
 
 - Mod now loads properly for all modloaders
-
-
 
 ## [1.1.0] - 2025-12-29
 
@@ -26,8 +30,6 @@
 - No longer gives the "Cover Me with Diamonds" achievement when crafting a piece of armor
 - Prevent smithing table upgrade for custom armor
 
-
-
 ## [1.0.1] - 2025-12-23
 
 ### Fixed
@@ -35,15 +37,11 @@
 - Incorrect base attribute configuration on custom tools and armor that caused higher effective stats than intended
 - Backend change: mod now follows proper semantic versioning format
 
-
-
 ## [1.0.0] - 2025-12-23
 
 ### Added
 
 - Initial release
-
-
 
 ## [0.0.0] - YYYY-MM-DD
 
