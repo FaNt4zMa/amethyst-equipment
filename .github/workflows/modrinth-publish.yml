@@ -21,7 +21,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       
       - name: Download release assets
         run: |
@@ -74,15 +74,19 @@ jobs:
           # Create mod directory
           mkdir mod-temp
           
-          # Extract resourcepack (goes into assets/)
-          unzip "Amethyst-Equipment-DP-${{ github.event.release.tag_name }}.zip" -d mod-temp
+          # Extract resourcepack
+          unzip "Amethyst-Equipment-RP-${{ github.event.release.tag_name }}.zip" -d mod-temp
 
-          # Extract datapack (goes into data/)
-          unzip -o "Amethyst-Equipment-RP-${{ github.event.release.tag_name }}.zip" -d mod-temp
+          # Extract datapack (after so pack.mcmeta is not overwritten)
+          unzip -o "Amethyst-Equipment-DP-${{ github.event.release.tag_name }}.zip" -d mod-temp
           
-          # Move overlay directory into main
+          # Flatten overlay directory into root
           cp -rf mod-temp/1.21.11/* mod-temp/
           rm -rf mod-temp/1.21.11
+
+          # Remove overlays from pack.mcmeta
+          jq 'del(.overlays)' mod-temp/pack.mcmeta > mod-temp/pack.mcmeta.tmp
+          mv mod-temp/pack.mcmeta.tmp mod-temp/pack.mcmeta
           
           # Copy and rename pack icon for mod loaders
           if [ -f "mod-temp/pack.png" ]; then
@@ -193,14 +197,6 @@ jobs:
             *This release was automatically generated via GitHub Actions*
           loaders: '["fabric", "forge", "neoforge", "quilt"]'
           game-versions: |-
-            1.21.5
-            1.21.6
-            1.21.7
-            1.21.8
-            1.21.9
-            1.21.10
-            1.21.11
-            26.1.x
             26.2
           dependencies: |-
             [{
